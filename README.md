@@ -124,8 +124,28 @@ repeat {
 
 ```
 
+## Access the first and last elements
+```
+var numbers = [1, 2, 3, 4, 5]
+
+// Accessing the first element
+let firstElement = numbers.first // firstElement is now equal to 1
+
+// Accessing the last element
+let lastElement = numbers.last // lastElement is now equal to 5
+
+// Removing the first element
+let removedFirst = numbers.removeFirst() // removedFirst is now equal to 1, and numbers is [2, 3, 4, 5]
+
+// Removing the last element
+let removedLast = numbers.removeLast() // removedLast is now equal to 5, and numbers is [2, 3, 4]
+```
+
+
 ## Modifying an Array
 ```
+var numbers = [1, 2, 3, 4, 5]
+
 numbers.append(6) //Appending 6 to the end of the array
 
 numbers.insert(0, at: 0) // Inserting 0 at the beginning of the array
@@ -134,13 +154,6 @@ numbers.remove(at: 2) // Removing the element at index 2 (third element)
 
 numbers.replaceSubrange(0..<2, with: [0, 0])
 ```
-
-
-
-
-
-
-
 
 
 
