@@ -1,5 +1,9 @@
 # Swift Cheatsheet - DSA
 
+- `let` is for constants; their value cannot change.
+- `var` is for variables; their value can change.
+  
+
 ## Declaring an array
 ```
 var numbers = [1, 2, 3, 4, 5] //array of integers
@@ -119,3 +123,37 @@ repeat {
 } while index >= 0
 
 ```
+
+## Modifying an Array
+```
+numbers.append(6) //Appending 6 to the end of the array
+
+numbers.insert(0, at: 0) // Inserting 0 at the beginning of the array
+
+numbers.remove(at: 2) // Removing the element at index 2 (third element)
+
+numbers.replaceSubrange(0..<2, with: [0, 0])
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
