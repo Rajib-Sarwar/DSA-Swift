@@ -174,7 +174,43 @@ set.insert("grape") // Add an element
 let removedFruit = set.remove("banana") // Remove an element and returns the removed value
 ```
 
+## Array Technique
 
+### Prefix Sum (PS)
+```
+Ar  : [-3, 6, 2, 4, 5,  2,   8, -9, 3 ]
+PS  : [-3, 3, 5, 9, 14, 16, 24, 15, 18]
+
+PS[0] = Ar[0]
+for i in 1..<Ar.count {
+    PS[i] = PS[i-1] + Ar[i]
+}
+```
+
+### Carry Forward
+```
+leftMax[i] = Maximum value in array from index 0 to index i
+
+Ar : [-3, 6, 2, 4, 5, 2, 8, -9, 3, 1]
+LM : [-3, 6, 6, 6, 6, 6, 8,  8, 8, 8]
+
+LM[0] = A[0]
+for i in 1..<Ar.count {
+    LM[i] = max(LM[i-1] + Ar[i])
+}
+
+
+rightMax[i] = Maximum value in array from index i to the last index
+
+Ar : [-3, 6, 2, 4, 5, 2, 8, -9, 3, 1]
+LM : [ 8, 8, 8, 8, 8, 8, 8,  3, 3, 1]
+
+RM = [Int](repeating: 0, count: n)
+RM[n - 1] = Ar[n - 1]
+for i in stride(from: n - 2, through: 0, by: -1) {
+    RM[i] = max(RM[i + 1], Ar[i])
+}
+```
 
 
 
