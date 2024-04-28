@@ -1,6 +1,6 @@
 # Swift Cheatsheet - DSA
 
-## declaring an array
+## Declaring an array
 ```
 var numbers = [1, 2, 3, 4, 5] //array of integers
 
@@ -15,11 +15,11 @@ var colors = Array<String>() //array using Array constructor
 var repeatedArray = Array(repeating: 0, count: 5) //array with repeated values
 ```
 
-## iterate an array
+## Iterate an array
 ```
 let numbers = [1, 2, 3, 4, 5]
 ```
-###For loop with values only
+#### For loop with values only
 ```
 //Forward
 for number in numbers {
@@ -36,7 +36,7 @@ for number in numbers.reversed() {
 }
 ```
 
-###For loop with indices only:
+#### For loop with indices only:
 ```
 //Forward
 for index in numbers.indices {
@@ -53,7 +53,7 @@ for index in numbers.indices.reversed() {
 }
 ```
 
-###For loop for index-value pairs:
+#### For loop for index-value pairs:
 ```
 //Forward
 for (index, number) in numbers.enumerated() {
@@ -66,7 +66,7 @@ for (index, number) in numbers.enumerated().reversed() {
 }
 ```
 
-###Special - For loop with `stride`
+#### Special - For loop with `stride`
 ```
 //Forward
 for index in stride(from: 0, to: numbers.count, by: 1) {
@@ -79,7 +79,7 @@ for index in stride(from: numbers.count - 1, through: 0, by: -1) {
 }
 ```
 
-###Special - For loop with `zip`
+#### Special - For loop with `zip`
 ```
 // Iterate backward over the array along with indices using zip
 for (index, number) in zip(numbers.indices.reversed(), numbers.reversed()) {
