@@ -4,7 +4,7 @@
 - `var` is for variables; their value can change.
   
 
-## Declaring an array
+## Declaring an Array
 ```
 var numbers = [1, 2, 3, 4, 5] //array of integers
 
@@ -155,14 +155,24 @@ numbers.remove(at: 2) // Removing the element at index 2 (third element)
 numbers.replaceSubrange(0..<2, with: [0, 0])
 ```
 
+## Declaring a Set
+```
+var set1 = Set<Int>() // Initialize an empty set of integers
+var set2: Set<String> = Set() // Initialize an empty set of strings
 
+var set3: Set<Character> = ["a", "b", "c"] // Initialize a set with an array literal
+```
 
+## Accessing and Modifying Sets
+```
+var set: Set<String> = ["apple", "banana", "orange"]
+if set.contains("apple") {
+    print("Apple is in the set")
+}
 
-
-
-
-
-
+set.insert("grape") // Add an element
+let removedFruit = set.remove("banana") // Remove an element and returns the removed value
+```
 
 
 
