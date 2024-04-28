@@ -97,3 +97,25 @@ for (numberIndex, letterIndex) in zip(numbers.indices.reversed(), letters.indice
 }
 
 ```
+
+#### Using while loop:
+```
+var index = numbers.count - 1 // Start from the last index
+
+while index >= 0 {
+    let number = numbers[index]
+    print("Index: \(index), Number: \(number)")
+    index -= 1 // Move to the previous index
+}
+```
+
+#### Using repeat-while loop:
+```
+var index = numbers.count - 1 // Start from the last index
+repeat {
+    let number = numbers[index]
+    print("Index: \(index), Number: \(number)")
+    index -= 1 // Move to the previous index
+} while index >= 0
+
+```
