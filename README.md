@@ -3,7 +3,7 @@
 ```
 var numbers = [1, 2, 3, 4, 5] //array of integers
 
-var fruits = ["Apple", "Banana", "Orange", "Mango"] // array of strings
+var fruits = ["Apple", "Banana", "Orange", "Mango"] //array of strings
 
 var emptyArray: [Int] = [] //empty array of integers
 
